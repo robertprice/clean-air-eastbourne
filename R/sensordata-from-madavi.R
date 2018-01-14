@@ -53,6 +53,7 @@ geom_line(aes(color = Location)) +
 #annotate("text", min(avdata$DateTime), 40, vjust = -1, label = "UK Limit") +
 #geom_hline(yintercept = 20, color="pink") +
 #annotate("text", min(avdata$DateTime), 20, vjust = -1, label = "WHO Limit") +
+expand_limits(y = 0) +
 ylab("PM10 µg/m3") +
 labs(title = "PM10 Pollution in Eastbourne",
      caption = "@eastbourneair")
